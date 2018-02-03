@@ -9,15 +9,15 @@ import * as _ from 'lodash';
   animations: [
     trigger('cardLocation', [
       state('0', style({transform: 'translate(0, 0)'})),
-      state('1', style({transform: 'translate(20rem, 0)'})),
-      state('2', style({transform: 'translate(40rem, 0)'})),
-      state('3', style({transform: 'translate(60rem, 0)'})),
-      state('4', style({transform: 'translate(80rem, 0)'})),
-      state('5', style({transform: 'translate(0, 25rem)'})),
-      state('6', style({transform: 'translate(20rem, 25rem)'})),
-      state('7', style({transform: 'translate(40rem, 25rem)'})),
-      state('8', style({transform: 'translate(60rem, 25rem)'})),
-      state('9', style({transform: 'translate(80rem, 25rem)'})),
+      state('1', style({transform: 'translate(110%, 0)'})),
+      state('2', style({transform: 'translate(220%, 0)'})),
+      state('3', style({transform: 'translate(330%, 0)'})),
+      state('4', style({transform: 'translate(440%, 0)'})),
+      state('5', style({transform: 'translate(0, ' + (window.screen.width > 600 ? '25rem' : '10rem') + ')'})),
+      state('6', style({transform: 'translate(110%, ' + (window.screen.width > 600 ? '25rem' : '10rem') + ')'})),
+      state('7', style({transform: 'translate(220%, ' + (window.screen.width > 600 ? '25rem' : '10rem') + ')'})),
+      state('8', style({transform: 'translate(330%, ' + (window.screen.width > 600 ? '25rem' : '10rem') + ')'})),
+      state('9', style({transform: 'translate(440%, ' + (window.screen.width > 600 ? '25rem' : '10rem') + ')'})),
     ])
   ]
 })

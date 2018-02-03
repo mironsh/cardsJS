@@ -5,7 +5,8 @@
   <mat-card-content>
     <mat-card *ngFor="let cardItem of cards; let cardIndex = index" class="inner" [@cardLocation]="cardItem.position">
       <mat-card-header>
-        <div mat-card-avatar [ngStyle]="{'background-image': 'url(/assets/images/' + cardItem.image + ')'}" class="cat-header-img"></div>
+        <div mat-card-avatar [ngStyle]="{'background-image': 'url(/assets/images/' + cardItem.image + ')'}"
+             class="cat-header-img"></div>
         <mat-card-title>{{cardItem.name}}</mat-card-title>
         <mat-card-subtitle>You liked {{cardItem.name}} {{cardItem.likes}} times!</mat-card-subtitle>
       </mat-card-header>
